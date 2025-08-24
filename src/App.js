@@ -116,34 +116,39 @@ const Portfolio = () => {
     setIsMenuOpen(false);
   };
 
-  const skills = [
-    { name: 'Java', icon: '☕', color: 'bg-orange-500' },
-    { name: 'React.js', icon: '⚛️', color: 'bg-blue-500' },
-    { name: 'SQL', icon: '🗄️', color: 'bg-purple-500' },
-    { name: 'MongoDB', icon: '🍃', color: 'bg-green-500' },
-    { name: 'MySQL', icon: '🐬', color: 'bg-blue-600' },
-    { name: 'HTML/CSS', icon: '🎨', color: 'bg-red-500' },
-    { name: 'GitHub', icon: '🐱', color: 'bg-gray-800' },
-    { name: 'AWS', icon: '☁️', color: 'bg-yellow-500' }
-  ];
+const skills = [
+  { name: 'Java', icon: '☕', color: 'bg-orange-500' },
+  { name: 'Spring Boot', icon: '🌱', color: 'bg-green-600' },
+  { name: 'Microservices', icon: '🧩', color: 'bg-indigo-500' },
+  { name: 'JDBC', icon: '🔗', color: 'bg-teal-500' },
+  { name: 'React.js', icon: '⚛️', color: 'bg-blue-500' },
+  { name: 'SQL', icon: '🗄️', color: 'bg-purple-500' },
+  { name: 'MySQL', icon: '🐬', color: 'bg-blue-600' },
+  { name: 'MongoDB', icon: '🍃', color: 'bg-green-500' },
+  { name: 'HTML/CSS', icon: '🎨', color: 'bg-red-500' },
+  { name: 'GitHub', icon: '🐱', color: 'bg-gray-800' },
+  { name: 'Postman', icon: '📮', color: 'bg-orange-400' },
+  { name: 'AWS', icon: '☁️', color: 'bg-yellow-500' }
+];
+
 
   const projects = [
-    {
-      name: 'RutuChakra',
-      description:'RutuChakra is a web-based platform designed to support women\'s health, focusing on menstrual tracking and PCOS management. It includes features like a cycle tracker, diet tips, workout plans, self-assessment tests, and a chatbot for instant help. The goal is to empower women with the right tools, knowledge, and community support to manage their health confidently.',
-      techStack: ['React.js','HTML','CSS','JavaScript','MongoDB', 'AI/ML'],
-      liveLink: 'https://drive.google.com/file/d/1iR8bIS_6JeVQk7OCdXt9mx4GRETj8UVa/view?usp=sharing',
-      githubLink: '#',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop'
-    },
-    {
-      name: 'Travel & Tourism Management System',
-      description:'A desktop-based application designed to streamline tour planning, hotel bookings, and destination management. Features include Paytm API integration for secure payments and a centralized admin panel for efficient user and service management.',
-      techStack: ['Java', 'JDBC', 'MySQL','Java Swing'],
-      liveLink: '#',
-      githubLink: '#',
-      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=500&h=300&fit=crop'
-    },
+{
+  name: 'AIcodeGen',
+  description: 'AIcodeGen is a full-stack application integrating Google Gemini AI for multi-language code generation. It provides REST APIs, persistent history, and analytics dashboards with Spring Boot & MySQL. The frontend is a responsive React UI with dark/light mode built using TypeScript and Tailwind CSS, ensuring a seamless user experience.',
+  techStack: ['React.js', 'Java', 'Spring Boot', 'MySQL', 'Gemini AI', 'REST APIs', 'Lombok', 'Maven', 'TypeScript', 'Tailwind CSS'],
+  liveLink: '#', // replace with your deployed link if available
+  githubLink: 'https://github.com/Shudhu7/AIcodeGen-Frontend',
+  image: 'https://cdn.prod.website-files.com/664e62fe66f5b31edc6c3b43/66ec8939090c40c8545a707e_6684ca136ceadfaa7150225d_662836e550c16c1914001534_AI3WaysMod%252520(1).webp'
+},
+{
+  name: 'EventHub',
+  description: 'EventHub is an event management platform with secure user authentication using JWT and Spring Security. It features an admin dashboard to manage events, bookings, and QR code-based tickets. The system is optimized with Hibernate for better MySQL performance and scalability.',
+  techStack: ['React.js', 'Java', 'Spring Boot', 'MySQL', 'JWT', 'Spring Security', 'Hibernate'],
+  liveLink: 'https://myeventhub.vercel.app/',  
+  githubLink: 'https://github.com/Shudhu7/EventHub',
+  image: 'https://lakshevent.com/img/about.jpg'
+},
     {
       name: 'CodSoft Internship Projects',
       description: 'During my virtual internship at CodSoft, I developed a series of front-end web projects, demonstrating proficiency in core web technologies. Key projects included a personal portfolio website, responsive landing pages, and an interactive calculator. These projects strengthened my skills in creating clean, responsive, and functional user interfaces.',
@@ -281,7 +286,7 @@ const Portfolio = () => {
                   Hire Me
                 </button>
                 <a 
-                  href="https://drive.google.com/file/d/1Lnb9g8mZuyI0yepeVCaXSfwlNVjBWNMi/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rcxdHe6X-AdkbJsHRCAH5cKS0aJ0_qCB/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`border ${darkMode ? 'border-gray-600 text-gray-300 hover:bg-gray-700' : 'border-gray-300 text-gray-700 hover:bg-gray-50'} px-8 py-3 rounded-lg transition-colors font-medium flex items-center gap-2 justify-center`}
@@ -348,7 +353,7 @@ const Portfolio = () => {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="https://drive.google.com/file/d/1Lnb9g8mZuyI0yepeVCaXSfwlNVjBWNMi/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rcxdHe6X-AdkbJsHRCAH5cKS0aJ0_qCB/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors font-medium flex items-center gap-2"
@@ -449,7 +454,7 @@ const Portfolio = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://drive.google.com/file/d/1Lnb9g8mZuyI0yepeVCaXSfwlNVjBWNMi/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rcxdHe6X-AdkbJsHRCAH5cKS0aJ0_qCB/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-colors font-medium flex items-center gap-2 justify-center"
@@ -458,7 +463,7 @@ const Portfolio = () => {
                   Download PDF
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1Lnb9g8mZuyI0yepeVCaXSfwlNVjBWNMi/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rcxdHe6X-AdkbJsHRCAH5cKS0aJ0_qCB/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`border ${darkMode ? 'border-blue-400 text-blue-400 hover:bg-gray-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'} px-8 py-3 rounded-lg transition-colors font-medium`}
